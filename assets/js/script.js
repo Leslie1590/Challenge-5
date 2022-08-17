@@ -21,7 +21,7 @@ $(".list-group").on("click", "h3", function() {
 });
 
 // jQuery sortable list group
-$( function() {
+$( function(sortable) {
     $( "#sortable" ).sortable();
   } );
 
@@ -36,12 +36,16 @@ var saveTasks = function() {
 
 };
 
-//display date function
-$( function() {
+//date function
+$( function(date) {
     $( "#datepicker" ).datepicker();
+    var dateInput = $("<input>")
+    .attr("type", "text")
+    .addClass("form-control")
+    .val(date);
+  $(this).replaceWith(dateInput);
   } );
 
-//save to local storage
 
 //load the schedule for the first time
-// loadSchedule();
+loadSchedule();
