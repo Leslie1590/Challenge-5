@@ -24,6 +24,8 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" 
     />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -36,22 +38,48 @@
       <p id="currentDay" class="lead"></p>
     </header>
 
-    <div class="container">
+    <main class="col-12 col-lg-9 d-flex flex-column">
+      <div class="container">
+
       <!-- Timeblocks go here -->
       <section class="row">
-        <div class="bg-secondary col-lg-3 b rounded-right"><h2>Date Here</h2></div>
-        <div class="bg-light col-lg-6"><h3>Event Here</h3></div>
+        
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</h3></ul>
         <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
-        <div class="bg-secondary col-lg-3 b rounded-right"><h2>Date Here</h2></div>
-        <div class="bg-light col-lg-6"><h3>Event Here</h3></div>
+
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</li></h3></ul>
         <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
-        <div class="bg-secondary col-lg-3 b rounded-right"><h2>Date Here</h2></div>
-        <div class="bg-light col-lg-6"><h3>Event Here</h3></div>
+
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</h3></ul>
+        <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
+
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</h3></ul>
+        <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
+
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</h3></ul>
+        <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
+        
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</h3></ul>
+        <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
+
+        <div class="bg-secondary col-lg-3 b rounded-right"><input type="text" id="datepicker"></div>
+        <ul id="sortable" class="sortable list-group bg-light col-lg-6"><h3>Add events here</h3></ul>
         <button class="col-lg-3 btn btn-block btn-info">Save Here</button>
       </section>
-    </div>
+      </div>
+    </main>
 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
